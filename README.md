@@ -6,3 +6,6 @@
 --labels=imgnet/labels.txt \
 --input_blob=data \
 --output_blob=softmax
+
+
+./detectnet-camera --prototxt=dnet/deploy.prototxt --model=dnet/snapshot_iter_4632.caffemodel --input_blob=data --output_cvg=coverage --output_bbox=bboxes
