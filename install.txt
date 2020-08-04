@@ -3,7 +3,9 @@
     3  sudo apt-get install git cmake
     4  git clone https://github.com/dusty-nv/jetson-inference
     5  cd jetson-inference/
-    6  git log
+    6  
     7 
     8  git checkout fd65f317ec81606b419c7f1f285f5348ef206d9a
     9  git submodule update --init
+    10 cmake ..
+    11 make
