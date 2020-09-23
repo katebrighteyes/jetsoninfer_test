@@ -8,3 +8,7 @@
 
 ./detectnet /dev/video0 --network=ssd-inception-v2
 
+
+./detectnet /dev/video0 --network=ssd-inception-v2 --threshold=0.33
+
+
