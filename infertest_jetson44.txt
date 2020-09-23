@@ -1,0 +1,10 @@
+./imagenet images/orange_0.jpg images/test/output_0.jpg
+
+./imagenet /dev/video0
+
+./detectnet --network=ssd-mobilenet-v2 images/peds_0.jpg output.jpg
+
+ ./detectnet /dev/video0 
+
+./detectnet /dev/video0 --network=ssd-inception-v2
+
