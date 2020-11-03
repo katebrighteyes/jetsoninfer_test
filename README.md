@@ -1,5 +1,7 @@
 # jetsoninfer_test
 
+https://github.com/katebrighteyes/jetsoninfer_test
+
 ./imagenet-camera \
 --prototxt=imgnet/deploy.prototxt \
 --model=imgnet/snapshot_iter_134596.caffemodel \
