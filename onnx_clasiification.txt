@@ -1,0 +1,27 @@
+# [1 . Install pytorch first !! ]
+
+$ cd jetson-inference/build
+$ ./install-pytorch.sh
+
+# choose torch version and click OK !!!!
+
+
+# [2 . Download Data for train !! ]
+
+$ cd jetson-inference/python/training/classification/data
+
+$ wget https://nvidia.box.com/shared/static/o577zd8yp3lmxf5zhm38svrbrv45am3y.gz -O cat_dog.tar.gz
+
+$ tar xvzf cat_dog.tar.gz
+
+
+# [2 . Train Resnet18 !! ]
+
+$ cd ~/jetson-inference/python/training/classification
+
+$ python3 train.py --model-dir=models/cat_dog data/cat_dog
+
+
+
+
+
