@@ -2,7 +2,7 @@
 
 https://github.com/katebrighteyes/jetsoninfer_test
 
-./imagenet-camera \
+./imagenet \
 --prototxt=imgnet/deploy.prototxt \
 --model=imgnet/snapshot_iter_134596.caffemodel \
 --labels=imgnet/labels.txt \
