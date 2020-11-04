@@ -23,15 +23,17 @@ $ python3 train.py --model-dir=models/cat_dog data/cat_dog
 
 # [3 . ONNX !! ]
 
+$ cd ~/jetson-inference/python/training/classification
+
 python3 onnx_export.py --model-dir=models/cat_dog
 
 # [4 . Prepare cat_1.jpg !! ]
 cp ~/jetson-inference/build/aarch64/bin/images/cat_1.jpg ./
 
 # [5 . Inference !! ]
-./imagenet --model=models/cat_dog/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=data/cat_dog/labels.txt cat_1.jpg cat_out.jpg
+imagenet --model=models/cat_dog/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=data/cat_dog/labels.txt cat_1.jpg cat_out.jpg
 
-./imagenet --model=models/cat_dog/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=data/cat_dog/labels.txt
+imagenet --model=models/cat_dog/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=data/cat_dog/labels.txt
 
 
 
